@@ -1,0 +1,22 @@
+/* Reglas CSS */
+/* Partes de una regla CSS
+  1. El selector
+  2. Bloque de declaraciones
+
+    Sintaxis del bloque de declaración:
+
+    {
+      atributo: valor;
+      atributo-de-mas-de-dos-palabras: otro-valor;
+    }
+*/
+
+/* No se recomienda utilizar esta forma de invocar CSS */
+/* Esta funcion @import tiene un comportamiento bloqueante, ya que el navegador para la lectura del documento HTML cuando la encuentra y solo sigue hasta que haya terminado de descargar lo que esta regla está importando */
+@import url(./otro-css.css);
+
+h1 {
+  color: orangered;
+  background-color: skyblue;
+  text-align: center;
+}
