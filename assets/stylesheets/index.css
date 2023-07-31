@@ -16,7 +16,7 @@
 @import url(./otro-css.css);
 
 h1 {
-  color: orangered;
+  color: rgb(0, 8, 255);
   background-color: skyblue;
   text-align: center;
 }
