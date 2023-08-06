@@ -15,8 +15,67 @@
 /* Esta funcion @import tiene un comportamiento bloqueante, ya que el navegador para la lectura del documento HTML cuando la encuentra y solo sigue hasta que haya terminado de descargar lo que esta regla está importando */
 @import url(./otro-css.css);
 
+/*Selectores básicos: 
+  1. etiquetas: elemtnos HTML
+  2. identificadores: atributo ID de las etiquetas
+  3. clases: atributo class de las etiquetas
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
 h1 {
   color: rgb(0, 8, 255);
   background-color: skyblue;
   text-align: center;
+}
+
+p {
+  color: midnightblue;
+}
+
+/*Se considera mala práctica dar estilos con IDs ya que el código no se puede reutilizar*/
+#parrafo-dos {
+  background-color: skyblue;
+}
+
+/*Dar estilos con clases nos permite reutilizar nuestro código CSS*/
+.text-20 {
+  font-size: 20px;
+}
+
+.text-32 {
+  font-size: 32px;
+}
+
+.bg-skyblue {
+  background-color: skyblue;
+}
+
+.bg-steelblue {
+  background-color: steelblue;
+}
+
+.text-white {
+  color: white;
+}
+
+.hijos-directos > li {
+  background-color: thistle;
+}
+
+.hijos-descendientes b {
+  background-color: thistle;
+}
+
+/*El selector de hermanos general va a aplicar a los elementos que son hermanos (que están en el mismo nivel) y que estén por debajo del elemento de referencia*/
+.hermanos-general ~ li {
+  background-color: thistle;
+}
+
+/*El selector de hermano adyacente va a aplicar al elemento que es hermano (que están en el mismo nivel) y que esté por debajo del elemento de referencia*/
+
+.hermanos-adyacentes + li {
+  background-color: thistle;
 }

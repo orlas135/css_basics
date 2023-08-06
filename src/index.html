@@ -8,6 +8,130 @@
     <link rel="stylesheet" href="../assets/stylesheets/index.css" />
   </head>
   <body>
-    <h1>Aprendiendo CSS</h1>
+    <h1 id="temario">Aprendiendo CSS</h1>
+    <article>
+      <h2>Enlaces de referencia</h2>
+      <ul>
+        <li><a href="https://svgporn.com/">SVG Porn</a></li>
+        <li><a href="https://es.wikipedia.org/wiki/CSS">Wikipedia</a></li>
+        <li><a href="https://cssreference.io/">CSS Reference</a></li>
+        <li><a href="https://caniuse.com/">Can i use</a></li>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN</a>
+        </li>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model"
+            >Box Model - MDN</a
+          >
+        </li>
+        <li><a href="https://codeguide.co/">Code Guide</a></li>
+      </ul>
+      <h2>Temario del curso</h2>
+
+      <ul>
+        <li><a href="#selectores_basicos">Selectores basicos</a></li>
+        <li><a href="#selectores_avanzados">Selectores avanzados</a></li>
+      </ul>
+    </article>
+    <hr />
+    <article id="selectores_basicos">
+      <h2>Selectores básicos</h2>
+
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam aperiam
+        dolorum dolorem adipisci aspernatur necessitatibus eum dicta delectus
+        natus est inventore, laborum minima amet totam itaque sed dolores iure
+        voluptatem.
+      </p>
+      <p id="parrafo-dos">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non est tempora
+        nemo maxime, consequatur magni fuga cum natus ex culpa eaque, in libero,
+        dolorem ad quo distinctio eligendi odit dicta.
+      </p>
+      <p class="text-32 bg-skyblue">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+        accusantium, odit, cupiditate laborum consectetur molestiae distinctio
+        fugit iure impedit ratione sit quis quos quisquam voluptatem ipsam
+        labore dolorum harum corrupti.
+      </p>
+      <p class="text-20 bg-steelblue text-white">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+        explicabo, accusamus corporis suscipit laboriosam soluta sequi magni
+        molestias, veniam temporibus nostrum delectus totam rem dolor incidunt
+        in cumque doloribus ipsa.
+      </p>
+      <a href="#temario">🖢</a>
+    </article>
+    <hr />
+    <article id="selectores_avanzados">
+      <h2>Selectores avanzados</h2>
+
+      <ul>
+        <li>Selectores de hijos</li>
+        <li>Selector de hermanos y adyacente</li>
+        <li>Selectores de atributos</li>
+      </ul>
+
+      <h3>Selectores de hijos</h3>
+
+      <h4>Selectores de hijos directos</h4>
+      <ul class="hijos-directos">
+        <li><b>Spring</b></li>
+        <li><b>Summer</b></li>
+        <li><b>Autumn</b></li>
+        <li><b>Winter</b></li>
+      </ul>
+
+      <h4>Selectores de hijos descendientes</h4>
+
+      <ul class="hijos-descendientes">
+        <li><b>Spring</b></li>
+        <li><b>Summer</b></li>
+        <li><b>Autumn</b></li>
+        <li><b>Winter</b></li>
+      </ul>
+
+      <h3>Selector de hermanos</h3>
+
+      <h4>Selector de hermanos (general)</h4>
+
+      <ul>
+        <li><b>Spring</b></li>
+        <li class="hermanos-general"><b>Summer</b></li>
+        <li><b>Autumn</b></li>
+        <li><b>Winter</b></li>
+      </ul>
+
+      <h4>Selector de hermanos adyacente</h4>
+
+      <ul>
+        <li><b>Spring</b></li>
+        <li class="hermanos-adyacentes"><b>Summer</b></li>
+        <li><b>Autumn</b></li>
+        <li><b>Winter</b></li>
+      </ul>
+
+      <h3>Selectores de atributos</h3>
+
+      <nav class="selectores-atributos">
+        <ul>
+          <li><a href="https://jonmircha.com" target="_blank">Inicio</a></li>
+          <li>
+            <a href="https://jonmircha.com/cursos" target="_blank">Cursos</a>
+          </li>
+          <li><a href="https://jonmircha.com/blog" target="_blank">Blog</a></li>
+          <li>
+            <a href="https://jonmircha.com/notas" target="_blank">Notas</a>
+          </li>
+          <li><a href="https://jonmircha.com/cv" target="_blank">CV</a></li>
+          <li>
+            <a href="https://jonmircha.com/ahora" target="_blank">Ahora</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="#temario">🖢</a>
+    </article>
   </body>
 </html>
