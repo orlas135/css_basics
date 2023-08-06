@@ -79,3 +79,38 @@ p {
 .hermanos-adyacentes + li {
   background-color: thistle;
 }
+
+/*Selectores de atributos*/
+
+.selectores-atributos a[href] {
+  color: orangered;
+}
+
+.selectores-atributos a[target="_blank"] {
+  font-weight: bold;
+}
+
+/*El comodín del asterisco aplica el estilo si contiene la palabra/texto especificada en cualquier parte*/
+.selectores-atributos a[href*="jonmircha"] {
+  font-size: 24px;
+}
+
+/*El comodín del circunflejo aplica el estilo si contiene la palabra/texto al inicio*/
+.selectores-atributos a[href^="http:"] {
+  text-decoration: none;
+}
+
+/*El comodín del dólar aplica el estilo si contiene la palabra/texto al final*/
+.selectores-atributos a[href$=".com"] {
+  background-color: black;
+}
+
+/*El comodín del ~ aplica el estilo si contiene la palabra/texto en una lista separada por espacios*/
+.selectores-atributos a[class~="cursos"] {
+  background-color: midnightblue;
+}
+
+/*El comodín del | aplica el estilo si contiene la palabra/texto en una lista separada por espacios y que después del texto especificado pueda venir un guión medio*/
+.selectores-atributos a[class|="menu"] {
+  font-style: italic;
+}
