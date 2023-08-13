@@ -114,3 +114,92 @@ p {
 .selectores-atributos a[class|="menu"] {
   font-style: italic;
 }
+
+/*Selector universal*/
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.selector-universal * {
+  background-color: bisque;
+}
+
+/*
+Pseudoclases: Dan estilos dependiendo del contexto, posición o estado del elemento
+https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+*/
+
+.form-pseudoclases *:required {
+  border-color: yellow;
+}
+
+.form-pseudoclases *:valid {
+  border-color: green;
+}
+
+.form-pseudoclases *:invalid {
+  border-color: red;
+}
+
+.form-pseudoclases *:focus {
+  background-color: salmon;
+}
+
+.form-pseudoclases *:disabled {
+  background-color: aquamarine;
+}
+
+.menu-pseudoclases a:visited {
+  color: darkgoldenrod;
+}
+
+.menu-pseudoclases a:hover {
+  color: orange;
+}
+
+.p-pseudoclases:hover {
+  font-size: 20px;
+}
+
+#temario:target {
+  background-color: lightgray;
+}
+
+.lista-pseudoclases li:first-child,
+li:last-child,
+li:nth-child(6) {
+  color: burlywood;
+}
+
+.lista-pseudoclases li:nth-child(2n) {
+  font-size: 20px;
+}
+
+.lista-pseudoclases li:nth-child(3n) {
+  font-weight: bold;
+}
+
+.lista-pseudoclases li:nth-child(even) {
+  background-color: blue;
+  color: white;
+}
+
+.lista-pseudoclases li:nth-child(odd) {
+  background-color: bisque;
+}
+
+.articulo-pseudoclases p:first-of-type {
+  background-color: pink;
+}
+
+.articulo-pseudoclases p:last-of-type {
+  background-color: violet;
+}
+
+.articulo-pseudoclases p:nth-of-type(3) {
+  background-color: brown;
+}
+
+.articulo-pseudoclases *:not(p, /*.boton, .lista */) {
+  background-color: beige;
+}

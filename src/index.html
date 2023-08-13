@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="../assets/stylesheets/index.css" />
   </head>
   <body>
-    <h1 id="temario">Aprendiendo CSS</h1>
-    <article>
+    <h1>Aprendiendo CSS</h1>
+    <article id="temario">
       <h2>Enlaces de referencia</h2>
       <ul>
         <li><a href="https://svgporn.com/">SVG Porn</a></li>
@@ -32,6 +32,7 @@
       <ul>
         <li><a href="#selectores_basicos">Selectores basicos</a></li>
         <li><a href="#selectores_avanzados">Selectores avanzados</a></li>
+        <li><a href="#pseudoclases">Selectores avanzados</a></li>
       </ul>
     </article>
     <hr />
@@ -139,6 +140,85 @@
         </ul>
       </nav>
 
+      <h3>Selector universal (*)</h3>
+
+      <ul class="selector-universal">
+        <li>Summer</li>
+        <li>Winter</li>
+        <li>Autumn</li>
+        <li>Spring</li>
+      </ul>
+
+      <a href="#temario">🖢</a>
+    </article>
+
+    <hr />
+
+    <article id="pseudoclases">
+      <h2>Pseudoclases</h2>
+
+      <h3>Pseudoclases de interacción</h3>
+      <form action="#" class="form-pseudoclases">
+        <input
+          type="text"
+          name="nombre"
+          placeholder="Escribe tu nombre"
+          id=""
+          required
+        />
+        <br />
+        <input
+          type="email"
+          name="correo"
+          placeholder="Escribe tu correo"
+          required
+        />
+        <br />
+        <input type="submit" value="Enviar" disabled />
+        <input type="submit" value="Enviar" />
+      </form>
+
+      <nav class="menu-pseudoclases">
+        <a href="#seccion1">Sección número 1</a>
+        <a href="#seccion2">Sección número 2</a>
+        <a href="#seccion3">Sección número 3</a>
+        <a href="#seccion4">Sección número 4</a>
+      </nav>
+
+      <p class="p-pseudoclases">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas veniam
+        asperiores repellat, inventore, itaque maxime dolorem corporis autem,
+        eveniet aut sequi ea id iusto illum cumque laborum quam voluptate ab!
+      </p>
+
+      <h3>Pseudoclases por posición</h3>
+
+      <ol class="lista-pseudoclases">
+        <li>Mú de Aries</li>
+        <li>Aldebarán de Tauro</li>
+        <li>Saga y Kanon de Géminis</li>
+        <li>Death Mask de Cáncer</li>
+        <li>Aioria de Leo</li>
+        <li>Shaka de Virgo</li>
+        <li>Dohko de Libra</li>
+        <li>Milo de Scorpio</li>
+        <li>Aioros de Sagitario</li>
+        <li>Shura de Capricornio</li>
+        <li>Camus de Acuario</li>
+        <li>Afrodita de Piscis</li>
+      </ol>
+
+      <article class="articulo-pseudoclases">
+        <header>Header</header>
+        <p>Párrafo</p>
+        <div>DIV</div>
+        <p>Párrafo 2</p>
+        <section>Section</section>
+        <p>Párrafo 3</p>
+        <div>DIV</div>
+        <p>Párrafo 4</p>
+        <footer>Footer</footer>
+      </article>
       <a href="#temario">🖢</a>
     </article>
   </body>
