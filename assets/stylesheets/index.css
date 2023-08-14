@@ -203,3 +203,77 @@ li:nth-child(6) {
 .articulo-pseudoclases *:not(p, /*.boton, .lista */) {
   background-color: beige;
 }
+
+/*Pseudoelementos
+Dan estilos a partes específicas de un elemento, se una el :: para diferenciarlos de las pseudoclases
+https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements
+*/
+
+.saga-geminis::before {
+  content: "♊";
+}
+
+.saga-geminis::after {
+  content: "♊";
+}
+
+.saga-precio::before {
+  content: "$";
+  font-weight: bold;
+}
+
+.saga-precio::after {
+  content: "USD";
+  font-weight: bold;
+}
+
+.p-pseudoelementos::first-letter {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.p-pseudoelementos::first-line {
+  color: coral;
+}
+
+.p-pseudoelementos::selection {
+  color: greenyellow;
+  background-color: black;
+}
+
+.i-pseudoelementos::placeholder {
+  color: aqua;
+}
+
+/*Agrupar selectores*/
+
+.form-agrupar-selectores input[type="text"],
+.form-agrupar-selectores input[type="email"],
+.form-agrupar-selectores textarea {
+  border-color: yellow;
+  background-color: black;
+  font-size: 20px;
+  display: block;
+  width: 300px;
+  border-width: 5px;
+  border-style: dashed;
+}
+
+/*
+El algoritmo de CSS: es la forma en que el navegador aplica los estilos al documento HTML. 
+Es vital entender este concepto para entender cómo se aplican y en algunas ocasiones
+cómo se sobreescriben las reglas CSS
+
+1. Cascada
+2. Especificidad
+3. Herencia
+
+La cascada es el mecanismo en que el navegador aplica los estilos. Y toma en cuenta lo siguiente en este orden:
+
+1) El origen del código:
+  - User Agent (los estilos por defecto del navegador)
+  - Personalizaciones del usuario
+  - Los estilos del autor
+2) La especificidad del selector
+3) Orden de aparición
+*/
