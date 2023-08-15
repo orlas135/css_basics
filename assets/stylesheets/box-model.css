@@ -4,12 +4,12 @@ Es la forma en la que CSS ve a los elementos HTML. Los ve como si fueran cajas.
 
 Los ve con las siguientes propiedades:
 
-  1. Content: contenido del elemento HTML
+  1. Content: contenido del elemento HTML, tomando en cuenta sus dimensiones (width, heigth)
   2. Border: lo que delimita cada uno de los elementos HTML
   3. Padding: las distancias internas que hay entre el borde y el contenido
   4. Margin: la distancia externa que hay entre el elemento HTML y sus elementos hermanos o padres
 
-Dentro del modelo de caja hay que considerar que una caja tiene 4 lados: 
+Dentro del modelo de caja hay que considerar que una caja tiene 4 lados (se "lee" en el sentido de las manceillas del reloj): 
 
   1. Top: arriba
   4. right: derecha
@@ -17,7 +17,81 @@ Dentro del modelo de caja hay que considerar que una caja tiene 4 lados:
   3. left: izquierda
 */
 
+body {
+  margin: 0px;
+}
+
 h1 {
+  width: 400px;
+  height: 200px;
+
+  /*Propiedades de tipo shorthand */
+  border-color: green;
+  border-width: medium; /*thick: 5px, thin; 1px, medium: 3px*/
   border-style: solid;
   border-width: 3px;
+
+  border: 2px dashed blue;
+}
+
+.caja-uno,
+.caja-dos {
+  background-color: chocolate;
+  border: medium solid yellow;
+
+  /*Esto aplica para margins y paddings
+  1 valor aplica para los 4 lados
+
+  2 valores aplica para:
+    Primer valor: top y bottom
+    Segundo valor: right y left
+
+  3 valores aplica para:
+    Primer valor: top
+    Segundo valor: right y left
+    Tercer valor: bottom
+
+  4 valores aplica para
+    Primer valor: top 
+    Segundo valor: right
+    Tercer valor: bottom
+    Cuarto valor: left
+  */
+  padding: 10px;
+  margin: 20px;
+  padding: 20px 40px;
+  margin: 40px 20px;
+  padding: 0 40px 20px;
+  margin: 50px 30px 0;
+  padding: 0 40px 20px 50px;
+  margin: 100px 50px 30px 0;
+}
+
+/*
+  Caja de línea: 
+    -Ocupan el espacio necesario para mostrar su contenido
+    -Permiten otros elementos a su lado
+    -Padding y margin solo empujan a elementos adyacentes en horizontal, NUNCA en vertical
+  Caja de bloque:
+    -Ocupan todo el ancho disponible
+    -Tienen dimensiones modificables (ancho y alto)
+    -No permiten otros elementos a su lado(aunque especifique un ancho, siguen ocupando todo el espacio disponible a lo ancho generando saltos de línea)
+*/
+
+.caja-linea,
+.caja-bloque {
+  background-color: darkcyan;
+  color: white;
+  width: 500px;
+  height: 250px;
+  border: thick solid black;
+  padding: 16px;
+}
+
+.caja-linea {
+  margin: 48px;
+}
+
+.caja-bloque {
+  margin: 32px;
 }
