@@ -90,8 +90,102 @@ h1 {
 
 .caja-linea {
   margin: 48px;
+  display: inline;
+  display: block;
 }
 
 .caja-bloque {
   margin: 32px;
+  display: block;
+  display: inline;
+}
+
+/*Propiedad display
+
+  inline
+  block
+  inline-block - se comporta como un elemento de línea pero acepta modificar sus dimensiones (alto y ancho)
+  none
+  table
+  list-item
+  flex - Ver curso de flexbox
+  grid - Ver curso de Grid CSS
+
+*/
+
+.caja-none,
+.caja-linea-bloque,
+.caja-hidden {
+  color: white;
+  background-color: blue;
+  width: 600px;
+  height: 300px;
+  border: thick solid black;
+}
+
+.caja-linea-bloque {
+  display: inline-block;
+}
+
+.caja-none {
+  display: none;
+}
+
+/*Oculta un elemento pero conserva el espacio que ocupa el elemento, a diferencia de display: none que no conserva el espacio*/
+.caja-hidden {
+  visibility: hidden /*visible or hidden*/;
+}
+
+.overflow {
+  background-color: cadetblue;
+  width: 200px;
+  height: 100px;
+  overflow: auto;
+}
+
+/*
+Tamaño de caja
+*/
+
+.box-sizing-content,
+.box-sizing-border {
+  background-color: deepskyblue;
+  box-sizing: content-box;
+  width: 500px;
+  height: 250px;
+  padding: 10px;
+  border: thick solid black;
+
+  /*Widht: 500 + 10 + 10 + 5 + 5*/
+  /*Height: 250 + 10 + 10 + 5 + 5*/
+}
+
+.box-sizing-border {
+  box-sizing: border-box;
+}
+
+.container-col-3 {
+  background-color: blanchedalmond;
+  margin-top: 20px;
+  height: 300px;
+  width: 600px;
+}
+
+.container-col-3 > * {
+  width: 200px;
+  border: thin solid red;
+  padding: 10px;
+  float: left;
+}
+
+/* 
+https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
