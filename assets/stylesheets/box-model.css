@@ -189,3 +189,43 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
+.container-floats {
+  background-color: cornflowerblue;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+/*Colapso de márgenes verticlaes*/
+
+.margin-collapse {
+  background-color: skyblue;
+}
+
+.margin-collapse section {
+  border: thin solid black;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.margin-collapse span {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+/*Centrado de cajas*/
+
+.sitio-web {
+  border: thin solid black;
+  background-color: thistle;
+  width: 800px;
+  height: 1000px;
+  padding: 16px;
+  margin: auto;
+}
