@@ -1,0 +1,82 @@
+.color-by-name {
+  background-color: coral;
+  color: purple;
+  border: thick solid greenyellow;
+}
+
+/*
+Sistema Hexadecimal
+0123456789ABCDEF
+
+RedGreeBlue (Medios Digitales) vs CyanMagentaYellowKey (Medios impresos)
+
+Colores en HEX va a ser colores de 6 dígitos
+
+#FF6600
+*/
+
+.color-hex {
+  background-color: #ff6600;
+  background-color: #f60;
+  background-color: #ff6605;
+  background-color: #00000000;
+  background-color: #00000055;
+  background-color: #0003;
+  color: #12ac78;
+  border: thick solid #ffffff;
+  border: thick solid #fff;
+  border: thick solid #ff0000;
+  border: thick solid #f00;
+  border: thick solid #00ff00;
+  border: thick solid #0f0;
+  border: thick solid #0000ff;
+  border: thick solid #00f;
+  border: thick solid #000000;
+  border: thick solid #000;
+}
+
+/*Sistema RGB
+  Acepta ocho bit por canal
+  Bit(0,1): 2 elevado a la potencia 8: 2*2*2*2*2*2*2*2 = 256
+*/
+.color-rgb {
+  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 0, 0);
+  background-color: rgb(0, 255, 0);
+  background-color: rgb(0, 0, 255);
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(255, 102, 0);
+  border: thick solid rgb(128, 109, 7);
+}
+
+/* HSL
+
+HueSaturationLightness (Tono-Saturación-Luminosidad)
+
+  El primer valor es Hue (Círculo cromático)
+
+  0° = Red
+  60° = Yellow
+  120° = Green
+  180° = Cyan
+  240° = Blue
+  300° = Magenta
+
+  El segundo valor es Saturation(Intensidad del color)
+
+  0% -> Escala de grises
+  100% -> Color puro
+
+  El tercer valor es lightness (Luminosidad del color)
+
+  0% -> Negro
+  100 -> Blanco
+
+*/
+
+.color-hsl {
+  background-color: hsl(0, 100%, 50%);
+  color: rgb(255, 102, 0);
+  border: thick solid rgb(128, 109, 7);
+}
