@@ -71,12 +71,17 @@ HueSaturationLightness (Tono-Saturación-Luminosidad)
   El tercer valor es lightness (Luminosidad del color)
 
   0% -> Negro
+  50% -> Color puro
   100 -> Blanco
 
 */
 
 .color-hsl {
   background-color: hsl(0, 100%, 50%);
-  color: rgb(255, 102, 0);
-  border: thick solid rgb(128, 109, 7);
+  background-color: hsl(120, 100%, 50%);
+  background-color: hsl(136, 81%, 34%);
+  background-color: hsl(30, 100%, 50%);
+  background-color: hsla(30, 100%, 50%, 0.3);
+  color: hsl(180, 88%, 47%);
+  border: thick solid hsl(197, 81%, 41%);
 }
