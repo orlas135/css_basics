@@ -85,3 +85,38 @@ HueSaturationLightness (Tono-Saturación-Luminosidad)
   color: hsl(180, 88%, 47%);
   border: thick solid hsl(197, 81%, 41%);
 }
+
+/*Valor transparent: color transparente = igual a aplicar rgba (0,0,0,0)
+  Valor currentColor: hereda el valor por defecto o asignado de la propiedad color, del ancestro que tega definida esta propiedad
+  busca del ancestro más cercano al más alejado
+*/
+.color-transparent-current {
+  background-color: darkmagenta;
+  background-color: currentColor;
+  background-color: transparent;
+  color: olive;
+  border: thick dashed currentColor;
+}
+
+.opacity {
+  background-color: orchid;
+  color: navy;
+  border: thick solid black;
+  opacity: 0.1;
+}
+
+.opacity-00 {
+  opacity: 0;
+}
+
+.opacity-10 {
+  opacity: 0.1;
+}
+
+.opacity-20 {
+  opacity: 0.2;
+}
+
+.opacity-30 {
+  opacity: 0.3;
+}
