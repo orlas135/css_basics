@@ -19,3 +19,113 @@ Unidades de Medida
 
   Conversiones entre unidades - https://pxtoem.com/
 */
+
+body {
+  box-sizing: border-box;
+  font-size: 20px;
+  font-size: 32px;
+  font-size: 16px;
+  background-color: blanchedalmond;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+.pixels {
+  background-color: cadetblue;
+  width: 500px;
+  height: 400px;
+  padding: 20px;
+  font-size: 32px;
+  border: thick solid rebeccapurple;
+}
+
+.ems {
+  background-color: cadetblue;
+  font-size: 24px;
+  padding: 1em 0.5em;
+  border: thick solid salmon;
+}
+
+.ems-child {
+  background-color: aqua;
+  border: thick solild blueviolet;
+  margin: 0.5em;
+  padding: 1em;
+  font-size: 2em;
+}
+
+.rems {
+  background-color: cadetblue;
+  font-size: 24px;
+  padding: 1rem 0.5rem;
+  border: thick solid salmon;
+}
+
+.rems-child {
+  background-color: aqua;
+  border: thick solild blueviolet;
+  margin: 0.5rem;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.exs {
+  background-color: cadetblue;
+  font-size: 24px;
+  padding: 1ex 0.5ex;
+  border: thick solid salmon;
+}
+
+.exs-child {
+  background-color: aqua;
+  border: thick solild blueviolet;
+  margin: 0.5ex;
+  padding: 1ex;
+  font-size: 2ex;
+}
+
+.chs {
+  background-color: cadetblue;
+  width: 10ch;
+}
+
+.percentages {
+  background-color: darkorchid;
+  padding: 5%;
+  margin: 20% 10%;
+  width: 80%;
+  font-size: 100%;
+}
+
+.height-parent {
+  background-color: brown;
+  width: 500px;
+  height: 500px;
+}
+
+.height-child {
+  background-color: chartreuse;
+  width: 50%;
+}
+
+.viewport {
+  background-color: darkcyan;
+  /*Recuerda que la etiqueta body tiene márgenes por defecto y recuerda que las barras de scroll también hacen parte del viewport*/
+  width: 50vw;
+  width: 100%;
+  width: 100vh;
+  height: 50vh;
+  height: 100vh;
+}
+
+.vmin,
+.vmax {
+  background-color: darksalmon;
+  width: 50vmax;
+  height: 50vmin;
+  border: thick solid black;
+}
